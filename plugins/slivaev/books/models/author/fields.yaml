@@ -1,0 +1,5 @@
+fields:
+    title:
+        label: Фамилия
+        span: auto
+        type: text

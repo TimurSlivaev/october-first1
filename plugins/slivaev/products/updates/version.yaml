@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table slivaev_products_list'
+    - builder_table_create_slivaev_products_list.php
+1.0.3:
+    - 'Updated table slivaev_products_list'
+    - builder_table_update_slivaev_products_list.php
+1.0.4:
+    - 'Updated table slivaev_products_list'
+    - builder_table_update_slivaev_products_list_2.php
+1.0.5:
+    - 'Updated table slivaev_products_list'
+    - builder_table_update_slivaev_products_list_3.php

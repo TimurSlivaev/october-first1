@@ -1,0 +1,4 @@
+title: Authors
+modelClass: Slivaev\Books\Models\Author_2
+toolbar:
+    buttons: reorder_toolbar

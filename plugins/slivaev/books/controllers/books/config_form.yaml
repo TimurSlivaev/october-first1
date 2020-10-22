@@ -1,0 +1,10 @@
+name: Books
+form: $/slivaev/books/models/book/fields.yaml
+modelClass: Slivaev\Books\Models\Book
+defaultRedirect: slivaev/books/books
+create:
+    redirect: 'slivaev/books/books/update/:id'
+    redirectClose: slivaev/books/books
+update:
+    redirect: slivaev/books/books
+    redirectClose: slivaev/books/books

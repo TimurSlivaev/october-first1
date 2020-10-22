@@ -1,0 +1,34 @@
+title = "Blog Post"
+url = "/post/:slug"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "home"
+
+[commentsPost]
+
+[SeoBlogPost]
+post = "post"
+==
+{% component 'SeoBlogPost' data=post %}
+
+<section>
+    <div class="container con-sup-con ">
+
+        <div class="section__header">
+            <h2 class="section__title">{{ post.title }}</h2>
+            <div class="section__text">
+                {{ post.excerpt }}
+            </div>
+        </div>
+        <div class="post">
+            {{ post.content_html|raw }}
+        </div>
+        {% component 'commentsPost' %}
+
+    </div>
+</section>

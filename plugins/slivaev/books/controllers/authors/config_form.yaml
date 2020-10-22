@@ -1,0 +1,10 @@
+name: Authors
+form: $/slivaev/books/models/author_2/fields.yaml
+modelClass: Slivaev\Books\Models\Author_2
+defaultRedirect: slivaev/books/authors
+create:
+    redirect: 'slivaev/books/authors/update/:id'
+    redirectClose: slivaev/books/authors
+update:
+    redirect: slivaev/books/authors
+    redirectClose: slivaev/books/authors

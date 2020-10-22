@@ -1,0 +1,4 @@
+title: Books
+modelClass: Slivaev\Books\Models\Book
+toolbar:
+    buttons: reorder_toolbar

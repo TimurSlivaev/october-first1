@@ -1,0 +1,48 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ blog }}"
+postsPerPage = 1
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "post"
+==
+{% set posts = blogPosts.posts %}
+
+<div class="blog">
+
+    {% for post in posts %}
+    <div class="blog__item">
+        <div class="blog__header">
+            <a href="{{ post.url }}">
+                {% for image in post.featured_images|slice(0,1) %}
+               
+                <img class="blog__photo" src="{{ image.path }}" alt="">
+                {% endfor %}
+            </a>
+            <div class="blog__date">
+                <div class="blog__date-day">{{ post.published_at|date('d') }}</div>
+                {{ post.published_at|date('M') }}
+            </div>
+        </div>
+        <div class="blog__content">
+            <div class="blog__title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
+            <div class="blog__text">{{ post.excerpt }}</div>
+        </div>
+        <div class="blog__footer">
+            <div class="blog-stat">
+                <span class="blog-stat__item">
+                    <i class="far fa-eye"></i> {{ post.views }}
+                </span>
+                <span class="blog-stat__item">
+                    <i class="far fa-comment-dots"></i> 17
+                </span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    
+</div><!-- /.blog -->

@@ -1,0 +1,51 @@
+1603404785a:1:{s:8:"post.htm";a:14:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:699:"title = "Blog Post"
+url = "/post/:slug"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "home"
+
+[commentsPost]
+
+[SeoBlogPost]
+post = "post"
+==
+{% component 'SeoBlogPost' data=post %}
+
+<section>
+    <div class="container con-sup-con ">
+
+        <div class="section__header">
+            <h2 class="section__title">{{ post.title }}</h2>
+            <div class="section__text">
+                {{ post.excerpt }}
+            </div>
+        </div>
+        <div class="post">
+            {{ post.content_html|raw }}
+        </div>
+        {% component 'commentsPost' %}
+
+    </div>
+</section>";s:5:"mtime";i:1603396877;s:6:"markup";s:461:"{% component 'SeoBlogPost' data=post %}
+
+<section>
+    <div class="container con-sup-con ">
+
+        <div class="section__header">
+            <h2 class="section__title">{{ post.title }}</h2>
+            <div class="section__text">
+                {{ post.excerpt }}
+            </div>
+        </div>
+        <div class="post">
+            {{ post.content_html|raw }}
+        </div>
+        {% component 'commentsPost' %}
+
+    </div>
+</section>";s:4:"code";N;s:5:"title";s:9:"Blog Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:4:"home";}s:12:"commentsPost";a:0:{}s:11:"SeoBlogPost";a:1:{s:4:"post";s:4:"post";}}}

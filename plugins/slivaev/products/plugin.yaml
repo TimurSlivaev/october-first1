@@ -1,0 +1,11 @@
+plugin:
+    name: 'slivaev.products::lang.plugin.name'
+    description: 'slivaev.products::lang.plugin.description'
+    author: slivaev
+    icon: oc-icon-automobile
+    homepage: ''
+navigation:
+    products:
+        label: товары
+        url: slivaev/products/products
+        icon: icon-automobile

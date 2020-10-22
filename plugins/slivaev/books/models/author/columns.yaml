@@ -1,0 +1,28 @@
+columns:
+    id:
+        label: id
+        type: number
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
+    title:
+        label: title
+        type: text
+    author_id:
+        label: author_id
+        type: number
+    genre_id:
+        label: genre_id
+        type: number
+    year:
+        label: year
+        type: number
+    description:
+        label: description
+        type: text
+    age_rating:
+        label: age_rating
+        type: number
