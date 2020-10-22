@@ -1,0 +1,63 @@
+1603404785a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:633:"[SeoCmsPage]
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme   }}">
+    {% component 'SeoCmsPage' %}
+    {% styles %}
+</head>
+<body>
+    {% partial 'header' %}
+
+
+    
+<div class="page">
+
+    {% page %}
+
+    {% partial 'footer' %}
+</div>
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="{{ 'assets/js/app.js'|theme   }}"></script>
+
+{% framework extras %}
+{% scripts %}
+    
+</body>
+</html>";s:5:"mtime";i:1603397163;s:6:"markup";s:615:"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme   }}">
+    {% component 'SeoCmsPage' %}
+    {% styles %}
+</head>
+<body>
+    {% partial 'header' %}
+
+
+    
+<div class="page">
+
+    {% page %}
+
+    {% partial 'footer' %}
+</div>
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="{{ 'assets/js/app.js'|theme   }}"></script>
+
+{% framework extras %}
+{% scripts %}
+    
+</body>
+</html>";s:4:"code";N;s:10:"SeoCmsPage";a:0:{}}}

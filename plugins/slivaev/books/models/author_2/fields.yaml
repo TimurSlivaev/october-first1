@@ -1,0 +1,5 @@
+fields:
+    name:
+        label: 'Фамилия автора'
+        span: auto
+        type: text

@@ -1,0 +1,86 @@
+1603404785a:1:{s:8:"blog.htm";a:6:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:1509:"[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ blog }}"
+postsPerPage = 1
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "post"
+==
+{% set posts = blogPosts.posts %}
+
+<div class="blog">
+
+    {% for post in posts %}
+    <div class="blog__item">
+        <div class="blog__header">
+            <a href="{{ post.url }}">
+                {% for image in post.featured_images|slice(0,1) %}
+               
+                <img class="blog__photo" src="{{ image.path }}" alt="">
+                {% endfor %}
+            </a>
+            <div class="blog__date">
+                <div class="blog__date-day">{{ post.published_at|date('d') }}</div>
+                {{ post.published_at|date('M') }}
+            </div>
+        </div>
+        <div class="blog__content">
+            <div class="blog__title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
+            <div class="blog__text">{{ post.excerpt }}</div>
+        </div>
+        <div class="blog__footer">
+            <div class="blog-stat">
+                <span class="blog-stat__item">
+                    <i class="far fa-eye"></i> {{ post.views }}
+                </span>
+                <span class="blog-stat__item">
+                    <i class="far fa-comment-dots"></i> 17
+                </span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    
+</div><!-- /.blog -->";s:5:"mtime";i:1603300809;s:6:"markup";s:1285:"{% set posts = blogPosts.posts %}
+
+<div class="blog">
+
+    {% for post in posts %}
+    <div class="blog__item">
+        <div class="blog__header">
+            <a href="{{ post.url }}">
+                {% for image in post.featured_images|slice(0,1) %}
+               
+                <img class="blog__photo" src="{{ image.path }}" alt="">
+                {% endfor %}
+            </a>
+            <div class="blog__date">
+                <div class="blog__date-day">{{ post.published_at|date('d') }}</div>
+                {{ post.published_at|date('M') }}
+            </div>
+        </div>
+        <div class="blog__content">
+            <div class="blog__title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
+            <div class="blog__text">{{ post.excerpt }}</div>
+        </div>
+        <div class="blog__footer">
+            <div class="blog-stat">
+                <span class="blog-stat__item">
+                    <i class="far fa-eye"></i> {{ post.views }}
+                </span>
+                <span class="blog-stat__item">
+                    <i class="far fa-comment-dots"></i> 17
+                </span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    
+</div><!-- /.blog -->";s:4:"code";N;s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:10:"{{ blog }}";s:12:"postsPerPage";s:1:"1";s:14:"noPostsMessage";s:34:"Записей не найдено";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:4:"home";s:8:"postPage";s:4:"post";}}}

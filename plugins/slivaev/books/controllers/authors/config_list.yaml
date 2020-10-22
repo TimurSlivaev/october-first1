@@ -1,0 +1,12 @@
+list: $/slivaev/books/models/author_2/columns.yaml
+modelClass: Slivaev\Books\Models\Author_2
+title: Authors
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'slivaev/books/authors/update/:id'

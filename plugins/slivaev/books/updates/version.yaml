@@ -1,0 +1,20 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table slivaev_books_'
+    - builder_table_create_slivaev_books_.php
+1.0.3:
+    - 'Created table slivaev_books_authors'
+    - builder_table_create_slivaev_books_authors.php
+1.0.4:
+    - 'Created table slivaev_books_genres'
+    - builder_table_create_slivaev_books_genres.php
+1.0.5:
+    - 'Updated table slivaev_books_authors'
+    - builder_table_update_slivaev_books_authors.php
+1.0.6:
+    - 'Updated table slivaev_books_'
+    - builder_table_update_slivaev_books_.php
+1.0.7:
+    - 'Updated table slivaev_books_'
+    - builder_table_update_slivaev_books__2.php

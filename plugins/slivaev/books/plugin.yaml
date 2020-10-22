@@ -1,0 +1,24 @@
+plugin:
+    name: 'slivaev.books::lang.plugin.name'
+    description: 'slivaev.books::lang.plugin.description'
+    author: slivaev
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: книги
+        url: slivaev/books/books
+        icon: icon-book
+        sideMenu:
+            side-menu-item2:
+                label: 'База данных книг'
+                url: slivaev/books/books
+                icon: icon-slack
+            side-menu-item:
+                label: авторы
+                url: slivaev/books/authors
+                icon: icon-simplybuilt
+            side-menu-item3:
+                label: жанры
+                url: slivaev/books/genres
+                icon: icon-star

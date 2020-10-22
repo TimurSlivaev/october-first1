@@ -1,0 +1,10 @@
+name: Genres
+form: $/slivaev/books/models/gerne/fields.yaml
+modelClass: Slivaev\Books\Models\Gerne
+defaultRedirect: slivaev/books/genres
+create:
+    redirect: 'slivaev/books/genres/update/:id'
+    redirectClose: slivaev/books/genres
+update:
+    redirect: slivaev/books/genres
+    redirectClose: slivaev/books/genres

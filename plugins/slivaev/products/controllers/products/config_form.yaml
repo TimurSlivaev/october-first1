@@ -1,0 +1,10 @@
+name: Products
+form: $/slivaev/products/models/prod/fields.yaml
+modelClass: Slivaev\Products\Models\Prod
+defaultRedirect: slivaev/products/products
+create:
+    redirect: 'slivaev/products/products/update/:id'
+    redirectClose: slivaev/products/products
+update:
+    redirect: slivaev/products/products
+    redirectClose: slivaev/products/products

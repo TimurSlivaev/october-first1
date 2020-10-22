@@ -1,0 +1,4 @@
+title: Genres
+modelClass: Slivaev\Books\Models\Gerne
+toolbar:
+    buttons: reorder_toolbar

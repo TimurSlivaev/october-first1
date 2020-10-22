@@ -1,0 +1,40 @@
+fields:
+    title:
+        label: 'Название книги'
+        span: auto
+        type: text
+    description:
+        label: 'Краткое описание'
+        size: ''
+        span: auto
+        type: textarea
+    year:
+        label: 'Год выпуска'
+        span: auto
+        type: number
+    age_rating:
+        label: 'Возрастной рейтинг'
+        span: auto
+        type: number
+    author_id:
+        label: Автор
+        showSearch: true
+        span: auto
+        type: dropdown
+    genre_id:
+        label: Жанр
+        showSearch: true
+        span: auto
+        type: dropdown
+    slug:
+        label: slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    cover:
+        label: обложка
+        mode: image
+        span: auto
+        type: mediafinder
